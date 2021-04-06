@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user singinBx">
+                <div class="imgBx"><img src="images/log-9.jpg" alt=""></div>
+                <div class="formBx">
+                    <form action="">
+                        <h2>Login</h2>
+                        <input type="text" name="" placeholder="Nome de Usuario">
+                        <input type="password" name="" placeholder="Senha">
+                        <input type="submit" name="" value="Login">
+                        <p class="signup">Não tem conta? <a href="#" onclick="toggleForm();">Cadastrar-se</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user singupBx">
+                <div class="formBx">
+                    <form action="">
+                        <h2>Criar Conta</h2>
+                        <input type="text" name="" placeholder="Nome de Usuario">
+                        <input type="email" name="" placeholder="Email">
+                        <input type="password" name="" placeholder="Senha">
+                        <input type="password" name="" placeholder="Confirmar Senha">
+                        <input type="submit" name="" value="Cadastrar-se">
+                        <p class="signup">Já tem conta? <a href="#" onclick="toggleForm();">Logar-se</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="images/log-10.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+    function toggleForm(){
+        var container = document.querySelector('.container');
+        container.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>
