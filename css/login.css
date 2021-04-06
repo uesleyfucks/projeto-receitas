@@ -39,7 +39,7 @@ section .container .user
     display: flex;
 }
 
-section .container .user .imgBx
+section .container .user .imgBox
 {
     position: relative;
     width: 50%;
@@ -48,7 +48,7 @@ section .container .user .imgBx
     transition: 0.5s;
 }
 
-section .container .user .imgBx img
+section .container .user .imgBox img
 {
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@ section .container .user .imgBx img
     object-fit: cover;
 }
 
-section .container .user .formBx
+section .container .user .formBox
 {
     position: relative;
     width: 50%;
@@ -71,7 +71,7 @@ section .container .user .formBx
     transition: 0.5s;
 }
 
-section .container .user .formBx form h2
+section .container .user .formBox form h2
 {
     font-size: 18px;
     font-weight: 600;
@@ -83,7 +83,7 @@ section .container .user .formBx form h2
     color: #555;
 }
 
-section .container .user .formBx form input
+section .container .user .formBox form input
 {
     position: relative;
     width: 100%;
@@ -99,7 +99,7 @@ section .container .user .formBx form input
     font-weight: 300;
 }
 
-section .container .user .formBx form input[type="submit"]
+section .container .user .formBox form input[type="submit"]
 {
     max-width: 150px;
     background: #ff0157;
@@ -110,7 +110,7 @@ section .container .user .formBx form input[type="submit"]
     letter-spacing: 1px;
 }
 
-section .container .user .formBx form .signup
+section .container .user .formBox form .signup
 {
     position: relative;
     margin-top: 20px;
@@ -121,7 +121,7 @@ section .container .user .formBx form .signup
     font-weight: 300;
 }
 
-section .container .user .formBx form .signup a
+section .container .user .formBox form .signup a
 {
     font-weight: 600;
     text-decoration: none;
@@ -131,53 +131,53 @@ section .container .user .formBx form .signup a
 /*-----Campo de Cadrastro-----*/
 
 /*-----Troca de Campos-----*/
-section .container .singupBx
+section .container .singupBox
 {
     pointer-events: none;
 }
 
-section .container.active .singupBx
+section .container.active .singupBox
 {
     pointer-events: initial;
 }
 
-section .container .singupBx .formBx
+section .container .singupBox .formBox
 {
     left: 100%;
 }
 
-section .container.active .singupBx .formBx
+section .container.active .singupBox .formBox
 {
     left: 0;
 }
 
-section .container .singupBx .imgBx
+section .container .singupBox .imgBox
 {
     left: -100%;
 }
 
-section .container.active .singupBx .imgBx
+section .container.active .singupBox .imgBox
 {
     left: 0;
 }
 
 
-section .container .singinBx .formBx
+section .container .singinBox .formBox
 {
     left: 0;
 }
 
-section .container.active .singinBx .formBx
+section .container.active .singinBox .formBox
 {
     left: 100%;
 }
 
-section .container .singinBx .imgBx
+section .container .singinBox .imgBox
 {
     left: 0;
 }
 
-section .container.active .singinBx .imgBx
+section .container.active .singinBox .imgBox
 {
     left: -100%;
 }
@@ -192,12 +192,12 @@ section .container.active .singinBx .imgBx
         max-width: 400px;
     }
 
-    section .container .imgBx
+    section .container .imgBox
     {
         display: none;
     }
 
-    section .container .user .formBx
+    section .container .user .formBox
     {
         width: 100%;
     }

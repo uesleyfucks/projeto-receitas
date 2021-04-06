@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/loginStyle.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 <body>
     <section>
+        <!-- Formularios -->
         <div class="container">
-            <div class="user singinBx">
-                <div class="imgBx"><img src="images/log-9.jpg" alt=""></div>
-                <div class="formBx">
+            <!-- Formulario de Login -->
+            <div class="user singinBox">
+                <div class="imgBox"><img src="images/log-9.jpg" alt=""></div>
+                <div class="formBox">
                     <form action="">
                         <h2>Login</h2>
                         <input type="text" name="" placeholder="Nome de Usuario">
@@ -21,8 +23,9 @@
                     </form>
                 </div>
             </div>
-            <div class="user singupBx">
-                <div class="formBx">
+            <!-- Formulario de Cadastro -->
+            <div class="user singupBox">
+                <div class="formBox">
                     <form action="">
                         <h2>Criar Conta</h2>
                         <input type="text" name="" placeholder="Nome de Usuario">
@@ -33,10 +36,11 @@
                         <p class="signup">Já tem conta? <a href="#" onclick="toggleForm();">Logar-se</a></p>
                     </form>
                 </div>
-                <div class="imgBx"><img src="images/log-10.jpg" alt=""></div>
+                <div class="imgBox"><img src="images/log-10.jpg" alt=""></div>
             </div>
         </div>
     </section>
+    <!-- Script para Troca de Formularios -->
     <script type="text/javascript">
     function toggleForm(){
         var container = document.querySelector('.container');
