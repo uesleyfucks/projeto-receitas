@@ -15,11 +15,12 @@ p
 
 header
 {
+    background: #828181;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 20px 100px;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@ header
 /*NavBar Fixa*/
 header.sticky
 {
-    background: #828181;
+    background: #111;
     padding: 10px 100px;
     box-shadow: rgba(0, 0, 0, 0.05);
 }
@@ -149,8 +150,7 @@ header .navegacao li a:hover
 {
     text-align: left;
     font-size: 35px; 
-    text-transform: 
-    capitalize;
+    text-transform: capitalize;
     font-weight: 400;
     padding-bottom: 10px;
 }
@@ -196,6 +196,12 @@ footer {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+}
+/*Texto do Rodape*/
+footer h2 {
+    background: none;
+    position: relative;
+    text-align: center;
 }
 footer .gradient {
     background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
