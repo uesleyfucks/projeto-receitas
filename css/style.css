@@ -15,7 +15,7 @@ p
 
 header
 {
-    background: #828181;
+    background: #000000;
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +28,7 @@ header
     transition: 0.5;
 }
 
-/*NavBar Fixa*/
+/*---NavBar Fixa---*/
 header.sticky
 {
     background: #111;
@@ -88,22 +88,26 @@ header .navegacao li a:hover
     color: #ff0157;
 }
 /*==================== 
-    Items Section
+    Mural
 ====================*/
-.items .img-thumbnail {
+.items .img-thumbnail
+{
     padding: 0;
     border: none;
     border-radius: 0;
 }
-.imageBox {
+.imageBox 
+{
     position:relative;
     overflow:hidden;
 }
-.imageBox img {
+.imageBox img 
+{
     width:100%;
     transition:.5s;
 }
-.textBox {
+.textBox 
+{
     position:absolute;
     top:0;
     left:-100%;
@@ -112,7 +116,8 @@ header .navegacao li a:hover
     background:rgba(0, 0, 0, 0.68);
     transition:.5s;
 }
-.textBox h5 {
+.textBox h5 
+{
     background: none;
     margin:0;
     padding:0;
@@ -129,7 +134,7 @@ header .navegacao li a:hover
     left:0;
 }
 /*==============================================
-                Items-Page
+                Mural Fotos
 ===============================================*/
 #items 
 {
@@ -185,7 +190,8 @@ header .navegacao li a:hover
 /*==================== 
     Footer Section
 ====================*/
-footer {
+footer 
+{
     width: 100%;
     height: auto;
     padding-top: 80px;
@@ -197,13 +203,15 @@ footer {
     background-position: top;
     background-size: cover;
 }
-/*Texto do Rodape*/
-footer h2 {
+/*---Texto do Rodape---*/
+footer h2 
+{
     background: none;
     position: relative;
     text-align: center;
 }
-footer .gradient {
+footer .gradient 
+{
     background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
     background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%);
     background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%);
@@ -214,18 +222,234 @@ footer .gradient {
     top: 0;
     left: 0;
 }
-footer address p {color: #828181; font-size: 20px;}
-footer address p span {display: block;}
-footer address p .call {color: #49a003; font-size: 22px;font-weight: 500;}
-footer .fa {font-size: 25px;}
-footer .fa-facebook-official {color:#0054a6;}
-footer .fa-twitter {color:#00ffff;}
-footer .fa-pinterest {color:#ff00ff;}
-footer .fa-youtube {color:#ff0000;}
-footer .fa-vimeo {color:#00bff3;}
-footer .fa-google-plus {color:#39b54a;}
-footer img {padding-bottom: 60px;}
-footer .copy-right {text-align: center;}
-footer .copy-right p {font-size: 14px;letter-spacing: 0.5px;}
-footer .copy-right p a {color: #52b304;}
+
+/*---PAGINAS DOS PAISES---*/
+
+/*---receitas---*/
+.receitas
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receitas .conteudo
+{
+    max-width: 900px;
+    text-align: center;
+    color: #fff;
+}
+.receitas .conteudo .lista
+{
+    position: relative;
+    width: 600px;
+    background: none;
+    list-style: none;
+    margin: 50px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.receitas .conteudo .lista li
+{
+    display: flex;
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    color: #fff;
+    margin: 5px 0;
+    transition: .5s;
+}
+.receitas .conteudo .lista li span
+{
+    background: none;
+}
+
+.receitas .conteudo .lista li span a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.receitas .conteudo .lista li span a:hover
+{
+    color: #ff0157;
+}
+
+.receitas .conteudo .lista li span input
+{
+    width: 50px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+}
+
+.receitas .conteudo .lista li span input:hover
+{
+    background: #ff0157;
+}
+
+.receitas .conteudo .lista li span:nth-child(1)
+{
+    width: 50px;
+}
+
+.receitas .conteudo .lista li span:nth-child(2)
+{
+    text-align: left;
+    margin-left: 50px;
+    width: 400px;
+}
+
+.receitas .conteudo .lista li span:nth-child(3)
+{
+    width: 100px;
+}
+/*---FIM PAGINAS DOS PAISES---*/
+
+/*--- Usuario Logado ---*/
+.usuario
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.usuario .menu-usuario
+{
+    top: 100px;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+/*-- FAVORITOS --*/
+.favoritos
+{
+    position: absolute;
+}
+
+.favoritos .lista
+{
+    position: relative;
+    width: 600px;
+    background: none;
+    list-style: none;
+    margin: 50px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.favoritos .lista li
+{
+    display: flex;
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    color: #fff;
+    margin: 5px 0;
+    transition: .5s;
+}
+.favoritos .lista li span
+{
+    background: none;
+}
+
+.favoritos .lista li span a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.favoritos .lista li span a:hover
+{
+    color: #ff0157;
+}
+
+.favoritos .lista li span:nth-child(1)
+{
+    width: 50px;
+}
+
+.favoritos .lista li span:nth-child(2)
+{
+    text-align: center;
+    margin-left: 50px;
+    width: 350px;
+}
+
+/*-- Formulario ADD --*/
+.formulario-receitas
+{
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+}
+
+.formulario-receitas form input
+{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #000;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.formulario-receitas select
+{
+    width: 350px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #000;
+    background: #f5f5f5;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+.formulario-receitas textarea
+{
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0 .4rem;
+    color: #333;
+    text-align: center;
+    line-height: 1;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+}
+
+form input[type="submit"]
+{
+    max-width: 150px;
+    background: #ff0157;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
 

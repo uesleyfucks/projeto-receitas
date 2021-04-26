@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Logado</title>
+</head>
+<!-- Header-->
+    <header>
+        <a href="index.html" class="logo">Logo <span>.</span></a>
+        <ul class="navegacao">
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="">Sair</a></li>
+        </ul>
+  
+    </header>
+  
+  
+  <!--(--)-->
+  <section class="usuario">
+    <div class="menu-usuario">
+        <h2>Menu Usuario</h2>
+        <div class="favoritos">
+            <h3>Meus Favoritos</h3>
+            <ul class="lista">
+                <li>
+                    <span>1</span>
+                    <span><a href="#">Receita1</a></span>
+                </li>
+                <li>
+                    <span>2</span>
+                    <span><a href="#">Receita2</a></span>
+                </li>
+                <li>
+                    <span>3</span>
+                    <span><a href="#">Receita3</a></span>
+                </li>
+                <li>
+                    <span>4</span>
+                    <span><a href="#">Receita4</a></span>
+                </li>
+            </ul>
+        </div>
+        <div class="formulario-receitas">
+            <h3>Adicionar Receita</h3>
+            <form action="">
+                <div class="select" id="pais">
+                    <select id="paises" name="paises">
+                        <option value="" selected disabled>Escolha o Pais:</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="espanha">Espanha</option>
+                        <option value="italia">Italia</option>
+                        <option value="china">China</option>
+                        <option value="india">India</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="franca">França</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="japao">Japão</option>
+                        <option value="grecia">Grecia</option>
+                        <option value="tailandia">Tailândia</option>
+                        <option value="marrocos">Marrocos</option>
+                    </select>
+                </div>
+                <div class="input-receitas" id="nome-receita">
+                    <input type="text" name="" placeholder="Nome da Receita">
+                </div>
+                <div class="input-receitas" id="ingredientes">
+                    <input type="text" name="" placeholder="Ingredientes">
+                </div>
+                <div class="input-receitas" id="preparo">
+                    <textarea name="descricao" rows="6" cols="40" maxlength="160" placeholder="Modo de Preparo"></textarea>
+                </div>
+                <input type="submit" name="" value="Adicionar">
+            </form>
+        </div>
+    </div>
+  </section>
+  <!-- -->
+  
+  <!-- Script para NavBar Fixa -->
+  <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  </script>
+  </body>
+  <!-- Footer -->
+  <footer class="page-footer font-small indigo">
+    <h2>RODAPE</h2>
+  </footer>
+</html>
