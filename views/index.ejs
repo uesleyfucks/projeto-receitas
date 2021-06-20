@@ -1,0 +1,36 @@
+<section id="items">
+<div class="container">
+<div class="heading" data-aos="fade-up" data-aos-delay="300">
+  <h2>Receitas</h2>
+</div>
+<div class="row text-center text-lg-left">
+  <% paises.forEach(pais => { %>
+
+  <div
+    class="col-lg-3 col-md-4 col-6"
+    data-aos="fade-left"
+    data-aos-delay="300"
+  >
+    <div class="imageBox">
+      <a
+        href="/<%= pais.link %>"
+        class="d-block mb-4 h-100"
+        data-toggle="lightbox"
+        data-gallery="example-gallery"
+      >
+        <img
+          class="img-fluid img-thumbnail"
+          src="images/<%= pais.foto %>"
+          alt=""
+        />
+        <div class="textBox">
+          <h5><%= pais.nome %></h5>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <% })%>
+</div>
+</div>
+</section>
