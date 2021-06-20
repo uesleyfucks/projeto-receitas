@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+p
+{
+    font-weight: 300;
+    color: #fff;
+}
+
+header
+{
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5;
+}
+
+/*---NavBar Fixa---*/
+header.sticky
+{
+    background: #111;
+    padding: 10px 100px;
+    box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo
+{
+    color: #fff;
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo span
+{
+    background: none;
+    color: #ff0157;
+}
+
+header .navegacao 
+{
+    background: none;
+    position: relative;
+    display: flex;
+}
+
+header .navegacao li
+{
+    background: none;
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+header .navegacao li a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+header.sticky .navegacao li a
+{
+    color: #fff;
+}
+
+header .navegacao li a:hover 
+{
+    color: #ff0157;
+}
+/*==================== 
+    Mural
+====================*/
+.items .img-thumbnail
+{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+.imageBox 
+{
+    position:relative;
+    overflow:hidden;
+}
+.imageBox img 
+{
+    width:100%;
+    transition:.5s;
+}
+.textBox 
+{
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height: 91.5%;
+    background:rgba(0, 0, 0, 0.68);
+    transition:.5s;
+}
+.textBox h5 
+{
+    background: none;
+    margin:0;
+    padding:0;
+    font-size: 22px;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-family:arial;
+}
+.imageBox:hover .textBox {
+    left:0;
+}
+/*==============================================
+                Mural Fotos
+===============================================*/
+#items 
+{
+    position: relative;
+    width: 100%; 
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: rgb(141, 116, 83);
+}
+#items .heading 
+{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#items .heading h2 
+{
+    text-align: left;
+    font-size: 35px; 
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+#items .img-thumbnail 
+{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+
+/*botao*/
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: 0.5s;
+}
+
+/*==================== 
+    Footer Section
+====================*/
+footer 
+{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: #fff;
+    position: relative;
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+/*---Texto do Rodape---*/
+footer h2 
+{
+    background: none;
+    position: relative;
+    text-align: center;
+}
+footer .gradient 
+{
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#e6000000',GradientType=1 );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*---PAGINAS DOS PAISES---*/
+
+/*---receitas---*/
+.receitas
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receitas .conteudo
+{
+    max-width: 900px;
+    text-align: center;
+    color: #fff;
+}
+.receitas .conteudo .lista
+{
+    position: relative;
+    width: 600px;
+    background: none;
+    list-style: none;
+    margin: 50px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.receitas .conteudo .lista li
+{
+    display: flex;
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    color: #fff;
+    margin: 5px 0;
+    transition: .5s;
+}
+.receitas .conteudo .lista li span
+{
+    background: none;
+}
+
+.receitas .conteudo .lista li span a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.receitas .conteudo .lista li span a:hover
+{
+    color: #ff0157;
+}
+
+.receitas .conteudo .lista li span input
+{
+    width: 50px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+}
+
+.receitas .conteudo .lista li span input:hover
+{
+    background: #ff0157;
+}
+
+.receitas .conteudo .lista li span:nth-child(1)
+{
+    width: 50px;
+}
+
+.receitas .conteudo .lista li span:nth-child(2)
+{
+    text-align: left;
+    margin-left: 50px;
+    width: 400px;
+}
+
+.receitas .conteudo .lista li span:nth-child(3)
+{
+    width: 100px;
+}
+/*---FIM PAGINAS DOS PAISES---*/
+
+/*--- Usuario Logado ---*/
+.usuario
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.usuario .menu-usuario
+{
+    top: 100px;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+/*-- FAVORITOS --*/
+.favoritos
+{
+    position: absolute;
+}
+
+.favoritos .lista
+{
+    position: relative;
+    width: 600px;
+    background: none;
+    list-style: none;
+    margin: 50px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.favoritos .lista li
+{
+    display: flex;
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    color: #fff;
+    margin: 5px 0;
+    transition: .5s;
+}
+.favoritos .lista li span
+{
+    background: none;
+}
+
+.favoritos .lista li span a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.favoritos .lista li span a:hover
+{
+    color: #ff0157;
+}
+
+.favoritos .lista li span:nth-child(1)
+{
+    width: 50px;
+}
+
+.favoritos .lista li span:nth-child(2)
+{
+    text-align: center;
+    margin-left: 50px;
+    width: 350px;
+}
+
+/*-- Formulario ADD --*/
+.formulario-receitas
+{
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+}
+
+.formulario-receitas form input
+{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #000;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.formulario-receitas select
+{
+    width: 350px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #000;
+    background: #f5f5f5;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+.formulario-receitas textarea
+{
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0 .4rem;
+    color: #333;
+    text-align: center;
+    line-height: 1;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+}
+
+form input[type="submit"]
+{
+    max-width: 150px;
+    background: #ff0157;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/*--------*************------------------*/
+
+section.login
+{
+    position: relative;
+    min-height: 100vh;
+    background: rgb(141, 116, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section .container-login
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/*-----Campo de Login-----*/
+section .container-login .user
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .container-login .user .imgBox
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgb(141, 116, 83);
+    transition: 0.5s;
+}
+
+section .container-login .user .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .container-login .user .formBox
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+section .container-login .user .formBox form h2
+{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+section .container-login .user .formBox form input
+{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section .container-login .user .formBox form input[type="submit"]
+{
+    max-width: 150px;
+    background: #ff0157;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+section .container-login .user .formBox form .signup
+{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+section .container-login .user .formBox form .signup a
+{
+    font-weight: 600;
+    text-decoration: none;
+    color: #ff0157;
+}
+
+/*-----Campo de Cadrastro-----*/
+
+/*-----Troca de Campos-----*/
+section .container-login .singupBox
+{
+    pointer-events: none;
+}
+
+section .container-login.active .singupBox
+{
+    pointer-events: initial;
+}
+
+section .container-login .singupBox .formBox
+{
+    left: 100%;
+}
+
+section .container-login.active .singupBox .formBox
+{
+    left: 0;
+}
+
+section .container-login .singupBox .imgBox
+{
+    left: -100%;
+}
+
+section .container-login.active .singupBox .imgBox
+{
+    left: 0;
+}
+
+
+section .container-login .singinBox .formBox
+{
+    left: 0;
+}
+
+section .container-login.active .singinBox .formBox
+{
+    left: 100%;
+}
+
+section .container-login .singinBox .imgBox
+{
+    left: 0;
+}
+
+section .container-login.active .singinBox .imgBox
+{
+    left: -100%;
+}
+/*++++++++++++++++++++++++*/
+
+/*Responsividade*/
+
+@media (max-width: 991px)
+{
+    section .container-login
+    {
+        max-width: 400px;
+    }
+
+    section .container-login .imgBox
+    {
+        display: none;
+    }
+
+    section .container-login .user .formBox
+    {
+        width: 100%;
+    }
+}
+
+/*CADASTRO*/
+
+.esquerda {
+    width: 170px;
+    height: 500px;
+    float: left;
+    border-right: 1px solid #555;
+}
+
+.esquerda .lista li button
+{
+    background: none;
+}
+
+.esquerda .lista li button a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.esquerda .lista li button a:hover
+{
+    color: #ff0157;
+}
+
+.esquerda .lista li button:nth-child(1)
+{
+    width: 50px;
+}
+
+.esquerda .lista li button:nth-child(2)
+{
+    text-align: center;
+    margin-left: 50px;
+    width: 350px;
+}
+
+.direita {
+    width: 1200px;
+    height: 500px;
+    float: left;
+}
+
+.direita table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+}
+  
+.direita td, th {
+    text-align: left;
+    padding: 5px;
+}
+  
+.direita form-editar
+{
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+}
+
+.direita .titulo-lista
+{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0px;
+
+}
+
