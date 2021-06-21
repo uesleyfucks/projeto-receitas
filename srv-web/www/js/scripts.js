@@ -82,18 +82,88 @@ function editarPaises(id) {
             const inputNome = document.forms.pais.nome;
 
             const header = {
-              method: 'PUT', 
+              method: "PUT",
               headers: {
-                'Accep' : 'application/json',
-                'Content-type' : 'application/json'
+                Accep: "application/json",
+                "Content-type": "application/json",
               },
               body: JSON.stringify({
-                "id": inputId.value,
-                "nome": inputNome.value
-              })
-            }
-            fetch("http://localhost:3000/paises/" + id, header)
-            .then(() => {
+                id: inputId.value,
+                nome: inputNome.value,
+              }),
+            };
+            fetch("http://localhost:3000/paises/" + id, header).then(() => {
+              carregarCadastro();
+            });
+          };
+          const btnCancelar = document.getElementById("btnCancelar");
+          btnCancelar.onclick = function (e) {
+            e.preventDefault();
+            carregarCadastro();
+          };
+        });
+    });
+}
+
+//Adicionar
+function adicionarPais() {
+  fetch("html/adicionarCadastro.html")
+    .then((res) => res.text())
+    .then((html) => {
+      main.innerHTML = html;
+      const btnSalvar = document.getElementById("btnSalvar");
+      btnSalvar.onclick = function (e) {
+        e.preventDefault();
+
+        const inputNome = document.forms.pais.nome;
+
+        const header = {
+          method: "POST",
+          headers: {
+            Accep: "application/json",
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({
+            nome: inputNome.value,
+          }),
+        };
+        fetch("http://localhost:3000/paises/", header).then(() => {
+          carregarCadastro();
+        });
+      };
+      const btnCancelar = document.getElementById("btnCancelar");
+      btnCancelar.onclick = function (e) {
+        e.preventDefault();
+        carregarCadastro();
+      };
+    });
+}
+
+//Excluir
+function excluirPais(id) {
+  fetch("html/excluirCadastro.html")
+    .then((res) => res.text())
+    .then((html) => {
+      main.innerHTML = html;
+      fetch("http://localhost:3000/paises/" + id)
+        .then((res) => res.json())
+        .then((pais) => {
+          const inputId = document.forms.pais.id;
+          inputId.value = pais.id;
+          const InputNome = document.forms.pais.nome;
+          InputNome.value = pais.nome;
+          const btnSalvar = document.getElementById("btnSalvar");
+          btnSalvar.onclick = function (e) {
+            e.preventDefault();
+            const header = {
+              method: "DELETE",
+              headers: {
+                Accep: "application/json",
+                "Content-type": "application/json",
+              },
+            };
+
+            fetch("http://localhost:3000/paises/" + id, header).then(() => {
               carregarCadastro();
             });
           };
@@ -124,6 +194,7 @@ function criarLinhaDePaises(pais) {
   aExcluir.href = "";
   aExcluir.onclick = function (e) {
     e.preventDefault();
+    excluirPais(pais.id);
   };
   aExcluir.innerHTML = "Deletar";
 
@@ -176,10 +247,17 @@ function carregarCadastro() {
       const tbody = document.querySelector(
         "#items > div.direita > table > tbody"
       );
-
       fetch("http://localhost:3000/paises")
         .then((res) => res.json())
         .then((listaDePaises) => {
+          const btnAdicionar = document.querySelector(
+            "#items > div.direita > div > a"
+          );
+          btnAdicionar.onclick = function (e) {
+            e.preventDefault();
+            adicionarPais();
+          };
+
           listaDePaises.forEach((pais) => {
             const linhaDePaises = criarLinhaDePaises(pais);
             tbody.appendChild(linhaDePaises);

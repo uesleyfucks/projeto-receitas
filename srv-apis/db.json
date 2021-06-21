@@ -2,11 +2,7 @@
   "paises": [
     {
       "id": 1,
-      "nome": "Brasil12"
-    },
-    {
-      "id": 2,
-      "nome": "Espanha3"
+      "nome": "Brasil128"
     },
     {
       "id": 3,
@@ -37,11 +33,6 @@
       "id": 8,
       "nome": "Mexico",
       "foto": "item-8.jpg"
-    },
-    {
-      "id": 9,
-      "nome": "Japão",
-      "foto": "item-9.jpg"
     },
     {
       "id": 10,
